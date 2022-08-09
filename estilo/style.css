@@ -23,7 +23,7 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(9, 63, 16);
     color: white;
     text-align: center;
 }
@@ -61,6 +61,22 @@ section {
     line-height: 2em;   
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: rgba(127, 184, 127, 0.849);
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow: inset 4px 4px 10px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 section.imagem > p {
     display: inline-block;
     background-attachment: fixed;
@@ -85,17 +101,21 @@ section > p {
 }
 
 footer {
-    background-color: darkolivegreen;
+    background-color: rgba(127, 184, 127, 0.849);
+    text-align: center;
     font-family: var(--fonte1);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10vh;
+    padding: auto;
 }
 
 footer > p {
-    background-color: darkkhaki;
+    color: white;
+    background-color: rgb(83, 143, 76);
+}
+
+footer > p > a {
+    color: black;
 }
 
 footer > h4 {  
-    font-size: 2em;
+    font-size: 25px;
 }
